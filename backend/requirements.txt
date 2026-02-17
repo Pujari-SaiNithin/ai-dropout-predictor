@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart
+joblib
+numpy
+xgboost
+shap
