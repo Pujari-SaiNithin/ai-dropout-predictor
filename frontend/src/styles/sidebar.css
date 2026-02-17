@@ -1,0 +1,56 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #071a33;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.menu li:hover {
+  background: #0e2a52;
+}
+
+.logout {
+  margin-top: 20px;
+  background: #8b1e1e;
+}
+
+/* MAIN AREA */
+.main-content {
+  flex: 1;
+  background: #020b1f;
+}
+
+.topbar {
+  height: 60px;
+  background: #0b1f3a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.page-content {
+  padding: 20px;
+}

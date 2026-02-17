@@ -1,0 +1,90 @@
+.dashboard {
+  color: white;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin: 12px 0;
+}
+
+.card button {
+  margin-top: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* COLORS */
+.blue {
+  background: linear-gradient(135deg, #0f2a52, #173b73);
+}
+
+.green {
+  background: linear-gradient(135deg, #155e3b, #1f8f5f);
+}
+
+.red {
+  background: linear-gradient(135deg, #7a1111, #a31717);
+}
+
+.yellow {
+  background: linear-gradient(135deg, #8a6d1d, #c9a227);
+}
+
+.dark {
+  background: linear-gradient(135deg, #0b1f3a, #132e52);
+}
+
+/* DETAILS SECTION */
+.details-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.details-section h2 {
+  margin-bottom: 10px;
+}
+
+
+.risk-box {
+  padding: 20px;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  color: white;
+}
+
+.risk-box.red {
+  background: linear-gradient(135deg, #7f1d1d, #b91c1c);
+}
+
+.risk-box.yellow {
+  background: linear-gradient(135deg, #78350f, #ca8a04);
+}

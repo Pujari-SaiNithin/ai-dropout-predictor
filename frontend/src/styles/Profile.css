@@ -1,0 +1,94 @@
+.profile-page {
+  padding: 40px;
+  color: white;
+  background: linear-gradient(135deg, #020b1f, #0b1f3a);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e3a5f;
+}
+
+.profile-basic h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.profile-basic .email {
+  opacity: 0.85;
+  margin: 4px 0 8px;
+}
+
+.status {
+  background: #1fa971;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* RISK ALERT */
+.risk-alert {
+  margin: 20px 0 30px;
+  padding: 18px;
+  background: linear-gradient(135deg, #7a1111, #a31717);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.25);
+}
+
+.risk-alert p {
+  margin: 6px 0 0;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px;
+}
+
+/* INFO GRID */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.info-grid div {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+/* ACTION */
+.action-area {
+  margin-top: 40px;
+}
+
+button {
+  padding: 12px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2b6cb0, #3182ce);
+  color: white;
+}

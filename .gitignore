@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# ML Models
+ml/models/
+*.pkl
+
+# Node
+node_modules/
+build/
+dist/
+
+# VS Code
+.vscode/
+
+# Environment
+.env

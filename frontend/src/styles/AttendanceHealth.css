@@ -1,0 +1,380 @@
+/* PAGE */
+.attendance-page {
+  padding: 24px;
+}
+
+/* GRID */
+.attendance-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* LEFT CARD */
+.attendance-card {
+  background: linear-gradient(180deg, #0b1220, #020617);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+/* SCORE */
+.attendance-value {
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.attendance-value.green { color: #22c55e; }
+.attendance-value.yellow { color: #eab308; }
+.attendance-value.red { color: #ef4444; }
+
+/* STATUS BADGE */
+.status-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.status-badge.green { background: #064e3b; color: #bbf7d0; }
+.status-badge.yellow { background: #78350f; color: #fde68a; }
+.status-badge.red { background: #7f1d1d; color: #fecaca; }
+
+/* SEGMENTED BAR */
+.segmented-bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  height: 42px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 24px 0 14px;
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #020617;
+}
+
+.segment.green { background: #22c55e; }
+.segment.yellow { background: #facc15; }
+.segment.red { background: #ef4444; }
+
+/* MARKERS */
+.marker {
+  position: absolute;
+  top: -6px;
+  width: 3px;
+  height: 54px;
+  background: white;
+}
+
+.marker.simulated {
+  background: #38bdf8;
+}
+
+/* LEGEND */
+.legend {
+  display: flex;
+  gap: 18px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* INFO BOX */
+.info-box {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+}
+
+/* WHAT-IF CARD */
+.whatif-container {
+  background: linear-gradient(180deg, hsl(220, 49%, 8%), #020617);
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.whatif-desc {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 22px;
+}
+
+/* SLIDER */
+.slider-block input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.slider-value {
+  font-weight: 600;
+}
+
+/* RISK COMPARISON */
+.risk-compare-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.risk-box {
+  flex: 1;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.risk-box.red {
+  background: linear-gradient(180deg, #7f1d1d, #450a0a);
+  color: #fecaca;
+}
+
+.risk-box.yellow {
+  background: linear-gradient(180deg, #92400e, #451a03);
+  color: #fde68a;
+}
+
+.arrow {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+/* REDUCTION */
+.reduction {
+  margin-top: 18px;
+  font-weight: 600;
+  color: #22c55e;
+}
+/* ===============================
+   READABILITY FIX – TEXT VISIBILITY
+   =============================== */
+
+/* Lift card background slightly */
+.attendance-card,
+.whatif-container {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.95),
+    rgba(2, 6, 23, 0.98)
+  );
+}
+
+/* Force text color inside info sections */
+.info-box {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e5e7eb; /* light gray */
+}
+
+/* Headings inside info boxes */
+.info-box h4 {
+  color: #f8fafc; /* near-white */
+  font-weight: 600;
+}
+
+/* Paragraph text */
+.info-box p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* Section titles */
+.attendance-card h3,
+.whatif-container h3 {
+  color: #f8fafc;
+}
+
+/* Labels and legends */
+.legend span,
+.status-badge,
+.whatif-desc {
+  color: #e5e7eb;
+}
+
+/* Risk reduction text */
+.reduction {
+  color: #22c55e;
+  font-weight: 600;
+}
+/* ===============================
+   FINAL VISIBILITY POLISH
+   =============================== */
+
+/* Page title */
+.attendance-page .page-title {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+/* Legend under segmented bar */
+.legend span {
+  color: #cbd5f5; /* light bluish white */
+  font-size: 0.85rem;
+}
+
+/* Segmented bar labels */
+.segment {
+  color: #020617; /* dark text so it pops on green/yellow/red */
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* Slider label + value */
+.whatif-card label,
+.whatif-card .sim-value {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* Right card description text */
+.whatif-card p {
+  color: #d1d5db;
+}
+
+/* Ensure no text inherits dark background color */
+.attendance-card *,
+.whatif-card * {
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+/* ===============================
+   WHAT-IF VISIBILITY FIX (FINAL)
+   =============================== */
+
+/* Attendance % label */
+.whatif-card label {
+  color: #f1f5f9;        /* bright white */
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Attendance percentage value */
+.whatif-card .sim-value {
+  color: #93c5fd;        /* soft blue */
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Slider track contrast */
+.whatif-card input[type="range"] {
+  background: linear-gradient(
+    to right,
+    #3b82f6,
+    #3b82f6
+  );
+}
+
+/* Arrow between risk cards */
+.risk-compare .arrow {
+  color: #e5e7eb;        /* light gray */
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Ensure text never blends into card background */
+.whatif-card {
+  color: #e5e7eb;
+}
+/* ===============================
+   FORCE VISIBILITY FIX (FINAL)
+   =============================== */
+
+/* What-if container */
+.whatif-card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.95),
+    rgba(2, 6, 23, 0.95)
+  );
+  color: #f8fafc;
+}
+
+/* Attendance % label */
+.whatif-card label {
+  color: #ffffff !important;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+
+/* Slider value (e.g. 43.07%) */
+.whatif-card .sim-value {
+  color: #93c5fd !important;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+
+/* Arrow between cards */
+.risk-compare .arrow {
+  color: #ffffff !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+/* Risk reduced text */
+.whatif-card .reduction {
+  color: #22c55e !important;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+/* ================================
+   Recommended Intervention – VISIBILITY FIX
+   ================================ */
+
+/* Ensure full contrast inside the card */
+.whatif-card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.98),
+    rgba(2, 6, 23, 0.98)
+  );
+  color: #f8fafc;
+}
+
+/* Title */
+.whatif-card h3 {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Description text */
+.whatif-card p {
+  color: #e5e7eb;
+  opacity: 1;
+}
+
+/* Attendance % label */
+.whatif-card label {
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Slider value (e.g. 43.07%) */
+.whatif-card .sim-value {
+  color: #93c5fd;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Arrow between risk cards */
+.whatif-card .arrow {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* Risk reduced text */
+.whatif-card .reduction {
+  color: #22c55e;
+  font-weight: 600;
+  opacity: 1;
+}

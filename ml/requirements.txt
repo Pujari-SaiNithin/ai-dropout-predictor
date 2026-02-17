@@ -1,0 +1,22 @@
+# Core
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.11.4
+
+# ML
+scikit-learn==1.4.2
+xgboost==2.0.3
+imbalanced-learn==0.12.2
+
+# Model Saving
+joblib==1.4.2
+
+# Visualization (for evaluation)
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Explainability (later phase)
+shap==0.45.0
+
+# Dev / Quality
+tqdm==4.66.2
